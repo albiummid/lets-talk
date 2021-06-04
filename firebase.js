@@ -1,29 +1,25 @@
-import * as firebase from 'firebase';
+// import * as firebase from 'firebase';
+import firebase from "firebase/app"
 import 'firebase/auth';
 import 'firebase/firestore';
 
 
-var firebaseConfig = {
-    apiKey: "AIzaSyDx9YkMMdwiHggskxuPT18GRm98IiQSvPA",
-    authDomain: "lets-talk-2ee86.firebaseapp.com",
-    projectId: "lets-talk-2ee86",
-    storageBucket: "lets-talk-2ee86.appspot.com",
-    messagingSenderId: "665648456685",
-    appId: "1:665648456685:web:770d390d3abf5669787de4"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyAtM2avypZwoWOKTXtkVsGWccz1Diyaieo",
+  authDomain: "lets-talk-team.firebaseapp.com",
+  projectId: "lets-talk-team",
+  storageBucket: "lets-talk-team.appspot.com",
+  messagingSenderId: "187414512476",
+  appId: "1:187414512476:web:1ae901da912a0f29d43799"
+};
 
-//   let app;
-//   if(firebase.apps.length === 0){
-//    app = firebase.initializeApp(firebaseConfig);
-//   }
- 
-//   const auth = firebase.auth();
-//   export {auth};
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+} else {
+  firebase.app();
+}
 
-  let app;
-  if(firebase.apps.length === 0){
-   app = firebase.initializeApp(firebaseConfig);
-  }
- 
-  const auth = firebase.auth();
-  export {auth};
+
+const db = firebase.firestore();
+const auth = firebase.auth();
+export { db, auth };

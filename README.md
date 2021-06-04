@@ -15,5 +15,7 @@ User Can send message with creating or using existing accounts and the messages 
 ### ii.Albi -
 
 1.Implemented firebase for authentication.
+
 2.Created chatting page and it's functionality.
+
 3.Managed Jira and Github.

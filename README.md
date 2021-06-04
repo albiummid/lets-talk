@@ -1,20 +1,18 @@
-# react-native-clone
-
-Dev - albi
-
-# About App:
+## About App:
 
 User Can send message with creating or using existing accounts and the messages will be save for 30 days.
 
-# Developer:
+## Developer:
 
-# i.Shuvo -
+### i.Shuvo -
 
 1.Implemened app structure
+
 2.Created login page and register page
+
 3.Created project slider
 
-# ii.Albi -
+### ii.Albi -
 
 1.Implemented firebase for authentication.
 2.Created chatting page and it's functionality.
